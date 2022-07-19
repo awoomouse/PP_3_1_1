@@ -1,6 +1,6 @@
 package com.example.springbootapp.controller;
 
-import com.example.springbootapp.dao.UserDao;
+import com.example.springbootapp.service.UserService;
 import com.example.springbootapp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class UsersController {
-    private final UserDao userDao;
+    private final UserService userDao;
 
     @Autowired
-    public UsersController(UserDao userDao) {
+    public UsersController(UserService userDao) {
         this.userDao = userDao;
     }
 

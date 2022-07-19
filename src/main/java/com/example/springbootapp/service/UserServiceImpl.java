@@ -1,4 +1,4 @@
-package com.example.springbootapp.dao;
+package com.example.springbootapp.service;
 
 import com.example.springbootapp.model.User;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class UserServiceImpl implements UserService {
 
     private EntityManager em;
 
